@@ -1,0 +1,128 @@
+.content {
+    margin-left: 200px;
+    /* Adjusted for fixed sidebar */
+    padding: 20px;
+    flex-grow: 1;
+    transition: margin-left 0.3s;
+    margin-top: 100px;
+}
+
+.content.collapsed {
+    margin-left: 60px;
+}
+
+.orders-section {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.orders-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.orders-header h1 {
+    font-size: 24px;
+    font-weight: 700;
+    color: #333;
+}
+
+.orders-header .buttons {
+    display: flex;
+    gap: 10px;
+}
+
+.orders-header .buttons button {
+    padding: 10px 20px;
+    border: 1px solid #6a1b9a;
+    border-radius: 4px;
+    background-color: white;
+    color: #6a1b9a;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.orders-header .buttons button.new-order {
+    background-color: #6a1b9a;
+    color: white;
+}
+
+.orders-header .buttons button:hover {
+    background-color: #4a148c;
+    color: white;
+}
+
+.orders-header .buttons button.new-order:hover {
+    background-color: #4a148c;
+}
+
+.filters {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    margin-bottom: 20px;
+
+}
+
+
+.filters input,
+.filters select,
+.filters button {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    background-color: white;
+    cursor: pointer;
+}
+
+.filters button {
+    background-color: #6a1b9a;
+    color: white;
+}
+
+.filters button:hover {
+    background-color: #4a148c;
+}
+
+.orders-table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: white;
+}
+
+.orders-table th,
+.orders-table td {
+    padding: 15px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+.orders-table th {
+    background-color: #f5f5f5;
+    font-weight: 500;
+}
+
+.orders-table td.status {
+    display: flex;
+    align-items: center;
+}
+
+.orders-table td.status span {
+    padding: 5px 10px;
+    border-radius: 20px;
+    font-weight: 500;
+}
+
+.orders-table td.status .completed {
+    background-color: #4caf50;
+    color: white;
+}
+
+.orders-table td.status .pending {
+    background-color: #ffeb3b;
+    color: black;
+}
