@@ -1,12 +1,12 @@
 import React from 'react';
-import 'tailwindcss/tailwind.css'; // Ensure Tailwind CSS is imported
+import 'tailwindcss/tailwind.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGoogle } from '@fortawesome/free-brands-svg-icons';
 
 const Login = () => {
     return (
-        <div className="min-h-screen flex items-center justify-center p-4 bg-white font-roboto">
-            <div className="bg-white shadow-lg rounded-lg flex flex-col md:flex-row w-full max-w-6xl">
+        <div className="min-h-screen flex items-center justify-center p-4 bg-gray-100 font-roboto ">
+            <div className="bg-white shadow-lg rounded-3xl flex flex-col md:flex-row w-full max-w-6xl ">
                 <div className="p-8 w-full md:w-1/2">
                     <h1 className="text-3xl font-bold mb-2">Login</h1>
                     <p className="text-gray-600 mb-6">See your growth and get support!</p>
@@ -35,7 +35,7 @@ const Login = () => {
                     <p className="mt-6 text-center text-gray-600">Not registered yet? <a className="text-blue-600" href="#">Create a new account</a></p>
                 </div>
                 <div className="w-full md:w-1/2">
-                    <img alt="Illustration of people working with data and charts" className="rounded-b-lg md:rounded-r-lg md:rounded-bl-none" src="https://storage.googleapis.com/a1aa/image/BTtIdflmnfpUFEl8t5MfpepeQjYnIiUNWySCfAY5ta8mXIO8E.jpg" />
+                    <img alt="Illustration of people working with data and charts" className="rounded-3xl" src="https://storage.googleapis.com/a1aa/image/BTtIdflmnfpUFEl8t5MfpepeQjYnIiUNWySCfAY5ta8mXIO8E.jpg" />
                 </div>
             </div>
         </div>

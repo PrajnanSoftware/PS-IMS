@@ -1,12 +1,12 @@
 // src/RegistrationForm.jsx  
 import React from 'react';
-
+import 'tailwindcss/tailwind.css';
 const RegistrationForm = () => {
     return (
-        <div className="min-h-screen flex items-center justify-center p-4 bg-white font-roboto">
-            <div className="bg-white shadow-lg rounded-lg flex flex-col md:flex-row w-full max-w-6xl">
+        <div className="min-h-screen flex items-center justify-center p-4 bg-gray-100 font-roboto ">
+            <div className="bg-white shadow-lg rounded-3xl flex flex-col md:flex-row w-full max-w-6xl ">
                 <div className="w-full md:w-1/2">
-                    <img alt="Illustration of people working with data and charts" className="rounded-b-lg md:rounded-r-lg md:rounded-bl-none" src="https://storage.googleapis.com/a1aa/image/BTtIdflmnfpUFEl8t5MfpepeQjYnIiUNWySCfAY5ta8mXIO8E.jpg" />
+                    <img alt="Illustration of people working with data and charts" className="rounded-3xl" src="https://storage.googleapis.com/a1aa/image/BTtIdflmnfpUFEl8t5MfpepeQjYnIiUNWySCfAY5ta8mXIO8E.jpg" />
                 </div>
                 <div className="p-8 w-full md:w-1/2">
                     <div className="mb-4">
