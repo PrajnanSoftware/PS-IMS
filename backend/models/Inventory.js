@@ -1,13 +1,17 @@
+
+// server/models/Inventory.js
 const mongoose = require('mongoose');
 
 const inventorySchema = new mongoose.Schema({
-    orderID: { type: String, required: true },
-    product: { type: String, required: true },
-    category: { type: String, required: true },
-    salesChannel: { type: String, required: true },
-    instruction: { type: String, required: true },
-    items: { type: String, required: true },
-    status: { type: String, enum: ['Completed', 'Pending'], default: 'Pending' }
+    sku: { type: String, required: true, unique: true },
+    name: { type: String, required: true },
+    description: String,
+    quantity: { type: Number, required: true, min: 0 },
+    unitPrice: { type: Number, required: true },
+    category: String,
+    supplier: { type: mongoose.Schema.Types.ObjectId, ref: 'Supplier' },
+    reorderPoint: { type: Number, default: 10 },
+    lastUpdated: { type: Date, default: Date.now }
 });
 
 module.exports = mongoose.model('Inventory', inventorySchema);
