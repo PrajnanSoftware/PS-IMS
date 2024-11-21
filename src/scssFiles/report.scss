@@ -1,0 +1,102 @@
+.main-content {
+    // margin-left: 80px;
+
+    padding: 20px;
+    // margin-top: 60px;
+    transition: margin-left 0.3s;
+    margin-left: 200px;
+    padding-top: 110px;
+
+}
+
+// .main-content.expanded {
+//     margin-left: 220px;
+// }
+
+.cards {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.card {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: 23%;
+    text-align: center;
+    position: relative;
+}
+
+.card .number-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.card .number {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.card .number.green {
+    color: green;
+
+}
+
+.card .number.red {
+    color: red;
+}
+
+.card .number.yellow {
+    color: orange;
+}
+
+.card .number.purple {
+    color: purple;
+}
+
+.card .description {
+    font-size: 14px;
+    color: gray;
+}
+
+.card .percentage {
+    font-size: 12px;
+    color: green;
+    display: flex;
+    align-items: center;
+}
+
+.card .percentage i {
+    margin-right: 5px;
+}
+
+.charts {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    gap: 20px;
+}
+
+.chart {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+#bar {
+    width: 65%;
+}
+
+#pie {
+    width: 35%;
+}
+
+.chart canvas {
+    width: 100%;
+    max-height: 400px;
+}
